@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>FE colloquio</title>
+		<script src="node_modules/jquery/dist/jquery.min.js"></script>
+		<script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+		<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="node_modules/bootstrap-table/dist/bootstrap-table.min.js"></script>
+		<script src="js/car.js"></script>
+		<link
+			rel="stylesheet"
+			href="node_modules/bootstrap-table/dist/bootstrap-table.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+		/>
+	</head>
+	<body>
+		<nav class="navbar navbar-dark bg-dark p-1">
+			<a href="" class="navbar-brand">Cars</a>
+		</nav>
+		<div class="container-fluid p-1">
+			<div class="table-responsive">
+				<table id="table"></table>
+			</div>
+		</div>
+		<!-- Modal -->
+		<div
+			class="modal fade"
+			id="exampleModal"
+			tabindex="-1"
+			aria-labelledby="exampleModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="nameVehicle">
+							Modal title
+						</h5>
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Close"
+						></button>
+					</div>
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-6" id="prodFrom"></div>
+							<div class="col-6" id="prodTo"></div>
+						</div>
+						<div class="row">
+							<div class="col-12" id="typeVehicle"></div>
+						</div>
+						<div class="row">
+							<div class="col-6" id="power"></div>
+							<div class="col-6" id="typeEngine"></div>
+						</div>
+						<div class="row">
+							<div class="col-6" id="sizeWheel"></div>
+							<div class="col-6" id="typeWheel"></div>
+						</div>
+						<div class="table-responsive">
+							<table id="submodels"></table>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button
+							type="button"
+							class="btn btn-secondary"
+							data-bs-dismiss="modal"
+						>
+							Close
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
